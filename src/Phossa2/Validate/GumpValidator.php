@@ -41,7 +41,8 @@ class GumpValidator extends ObjectAbstract implements ValidatorInterface
     public function validate(array $data, array $rules)/*# : bool */
     {
         $data = $this->getGump()->sanitize($data);
-        return $this->getGump()->validate($data, $rules);
+        return true === $this->getGump()->validate($data, $rules) ?
+            true : false;
     }
 
     /**
