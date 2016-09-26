@@ -6,7 +6,7 @@
 [![Latest Stable Version](https://img.shields.io/packagist/vpre/phossa2/validate.svg?style=flat)](https://packagist.org/packages/phossa2/validate)
 [![License](https://poser.pugx.org/phossa2/validate/license)](http://mit-license.org/)
 
-**phossa2/validate** is a PHP library.
+**phossa2/validate** is a PHP validation proxy to various validate libraries.
 
 It requires PHP 5.4, supports PHP 7.0+ and HHVM. It is compliant with [PSR-1][PSR-1],
 [PSR-2][PSR-2], [PSR-3][PSR-3], [PSR-4][PSR-4], and the proposed [PSR-5][PSR-5].
@@ -43,19 +43,17 @@ Create the validate instance,
 ```php
 use Phossa2\Validate\Validate;
 
-$validate = new Validate();
+$v = new Validate();
+
+if (true === $v->validate($_POST, [
+    'username' => 'required|alpha_numeric',
+    'password' => 'required|max_len,100|min_len,6'
+])) {
+    // continue
+} else {
+    $err = $v->getError();
+}
 ```
-
-Features
----
-
-- <a name="anchor"></a>**Feature One**
-
-
-APIs
----
-
-- <a name="api"></a>`LoggerInterface` related
 
 Change log
 ---
@@ -80,6 +78,8 @@ Dependencies
 - PHP >= 5.4.0
 
 - phossa2/shared >= 2.0.21
+
+- [wixel/gump](https://github.com/Wixel/GUMP) >= 1.4
 
 License
 ---
