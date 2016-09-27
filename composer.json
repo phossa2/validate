@@ -21,12 +21,12 @@
         "squizlabs/php_codesniffer": "2.*"
     },
     "autoload": {
-        "psr-4": { "Phossa2\\Validate\\": "Validate/" }
+        "psr-4": { "Phossa2\\Validate\\": "src/Validate/" }
     },
     "scripts": {
         "test": "phpunit",
-        "check": "phpcs --standard=psr2 Validate/",
-        "format": "phpcbf --standard=psr2 Validate/"
+        "check": "phpcs --standard=psr2 src/",
+        "format": "phpcbf --standard=psr2 src/"
     },
     "config": {
         "platform": {
