@@ -5,7 +5,7 @@
 [![PHP 7 ready](http://php7ready.timesplinter.ch/phossa2/validate/master/badge.svg)](https://travis-ci.org/phossa2/validate)
 [![HHVM](https://img.shields.io/hhvm/phossa2/validate.svg?style=flat)](http://hhvm.h4cc.de/package/phossa2/validate)
 [![Latest Stable Version](https://img.shields.io/packagist/vpre/phossa2/validate.svg?style=flat)](https://packagist.org/packages/phossa2/validate)
-[![License](https://poser.pugx.org/phossa2/validate/license)](http://mit-license.org/)
+[![License](https://img.shields.io/:license-mit-blue.svg)](http://mit-license.org/)
 
 **phossa2/validate** is a PHP validation proxy to various validate libraries.
 
