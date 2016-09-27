@@ -3,7 +3,7 @@
     "license": "MIT",
     "type": "library",
     "description": "A PHP validation proxy to various validate libraries.",
-    "keywords": ["validate", "phossa", "phossa2"],
+    "keywords": ["validate", "phossa", "phossa2", "framework"],
     "homepage": "https://github.com/phossa2/validate",
     "authors": [
         {
@@ -14,7 +14,7 @@
     "require": {
         "php": "~5.4.0|~7.0.0",
         "wixel/gump": "dev-master",
-        "phossa2/shared": "dev-master"
+        "phossa2/shared": "2.0.21"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*",
@@ -25,8 +25,8 @@
     },
     "scripts": {
         "test": "phpunit",
-        "check": "phpcs --standard=psr2 src/",
-        "format": "phpcbf --standard=psr2 src/"
+        "check": "phpcs --standard=psr2 Validate/",
+        "format": "phpcbf --standard=psr2 Validate/"
     },
     "config": {
         "platform": {
@@ -35,7 +35,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev"
+            "dev-master": "2.1-dev"
         }
     },
     "archive": {
