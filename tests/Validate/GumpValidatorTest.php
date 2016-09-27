@@ -1,16 +1,17 @@
 <?php
-require_once 'src/Phossa2/Validate/GumpValidator.php';
+
+namespace Phossa2\Validate;
 
 /**
  * GumpValidator test case.
  */
-class GumpValidatorTest extends PHPUnit_Framework_TestCase
+class GumpValidatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      *
      * @var GumpValidator
      */
-    private $gumpValidator;
+    private $object;
 
     /**
      * Prepares the environment before running a test.
@@ -18,6 +19,7 @@ class GumpValidatorTest extends PHPUnit_Framework_TestCase
     protected function setUp()
     {
         parent::setUp();
+        $this->object = new GumpValidator();
     }
 
     /**
